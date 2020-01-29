@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    image: golang:latest
+    container_name: go_container
+    tty: true
+    environment:
+      - GO111MODULE=on
+    volumes:
+      - ./:/go/src/app
+    working_dir: /go/src/app

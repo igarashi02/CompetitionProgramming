@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: heroku/scala
+    container_name: scala_container
+    tty: true
+    volumes:
+      - ./:/work
+    working_dir: /work
