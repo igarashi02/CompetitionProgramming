@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: python:latest
+    container_name: python_container
+    tty: true
+    volumes:
+      - ./:/work
+    working_dir: /work
